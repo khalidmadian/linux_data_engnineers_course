@@ -1,0 +1,311 @@
+1 - to list files in directory (ls)
+khalid@khalid-Victus:~$ ls 
+Abolftoh   file2  hosts   odoo18    Templates
+Desktop    file3  Music   Pictures  Videos
+Documents  file4  odoo16  Public
+____________________________________________________________________________________________________________________
+2- to list all files and hidden its start with dot (la) or (ls -a )
+khalid@khalid-Victus:~$ la
+Abolftoh       .gitconfig  .pki
+.bash_history  .gnupg      .profile
+.bash_logout   .gphoto     .psensor
+.bashrc        hosts       .psql_history
+.cache         .hosts.swp  Public
+.config        .java       snap
+.dbclient      .lesshst    .ssh
+____________________________________________________________________________________________________________________
+3- to list all files hidden and type of files and (ls -alF)
+khalid@khalid-Victus:~$ ls -alF
+total 228
+drwxr-x--x 31 khalid khalid  4096 سبت 22 17:55 ./
+drwxr-xr-x  3 root   root    4096 ماي 26 21:43 ../
+drwxrwxr-x  5 khalid khalid  4096 يول 31 05:05 Abolftoh/
+-rw-------  1 khalid khalid 47896 سبت 23 05:55 .bash_history
+-rw-r--r--  1 khalid khalid   220 ماي 26 21:43 .bash_logout
+-rw-r--r--  1 khalid khalid  3771 ماي 26 21:43 .bashrc
+drwx------ 27 khalid khalid  4096 سبت  8 18:03 .cache/
+drwx------ 28 khalid khalid  4096 سبت 20 23:54 .config/
+____________________________________________________________________________________________________________________
+4- to clear al command in terminal tab (clear)
+____________________________________________________________________________________________________________________
+5 - to get documintion about about command (--help)
+ khalid@khalid-Victus:~$ ls --help
+Usage: ls [OPTION]... [FILE]...
+List information about the FILEs (the current directory by default).
+Sort entries alphabetically if none of -cftuvSUX nor --sort is specified.
+____________________________________________________________________________________________________________________
+6 - to get documintion about about command but not populer(man)
+____________________________________________________________________________________________________________________
+7- to get the current path or location (pwd)
+khalid@khalid-Victus:~$ pwd
+/home/khalid
+____________________________________________________________________________________________________________________
+8- to get the type of command or location of rhis app or script "all command is script or app"(type)
+khalid@khalid-Victus:~$ type -a ls
+ls is aliased to `ls --color=auto'
+ls is /usr/bin/ls
+ls is /bin/ls
+____________________________________________________________________________________________________________________
+9 - to know th current user is connect (whoami)
+khalid@khalid-Victus:~$ whoami 
+khalid
+____________________________________________________________________________________________________________________
+10  - to know the current i connect (ip address)
+khalid@khalid-Victus:~$ ip address
+1: lo: <LOOPBACK,UP,LOWER_UP> mtu 65536 qdisc noqueue state UNKNOWN group default qlen 1000
+    link/loopback 00:00:00:00:00:00 brd 00:00:00:00:00:00
+    inet 127.0.0.1/8 scope host lo
+       valid_lft forever preferred_lft forever
+    inet6 ::1/128 scope host 
+       valid_lft forever preferred_lft forever
+2: eno1: <NO-CARRIER,BROADCAST,MULTICAST,UP> mtu 1500 qdisc fq_codel state DOWN group default qlen 1000
+    link/ether 24:6a:0e:5c:c8:6b brd ff:ff:ff:ff:ff:ff
+    altname enp3s0
+3: wlo1: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc noqueue state UP group default qlen 1000
+    link/ether 98:5f:41:b6:0e:22 brd ff:ff:ff:ff:ff:ff
+____________________________________________________________________________________________________________________
+11 - to know the current host (hosyname)
+khalid@khalid-Victus:~$ hostname
+khalid-Victus
+____________________________________________________________________________________________________________________
+12 - to create directory (mkdir)
+____________________________________________________________________________________________________________________
+13 - to print in terminal (echo "hello khalid sadd")
+hello khalid sadd
+____________________________________________________________________________________________________________________
+14 - to delete file (rm)
+____________________________________________________________________________________________________________________
+15 - to remove directory (rmdir) or (rm -r)
+
+____________________________________________________________________________________________________________________
+
+16 - to create text file or changhe modification time (touch)
+
+____________________________________________________________________________________________________________________
+17 - to create text file but more easy and populer(nano)
+
+____________________________________________________________________________________________________________________
+18 - to create variable and print it (echo whith dollar sign)
+var=20
+echo $var
+20
+____________________________________________________________________________________________________________________
+19 - to crreate several files in same time or make another operation ({}, [])
+touch file{2..5}
+file2, file3, file4, file5
+
+
+rm file{1..10}
+
+____________________________________________________________________________________________________________________
+20 - you can do summition as varible($[])
+var3=$[1  + 3]
+____________________________________________________________________________________________________________________
+21 - to get all variable in your system (set)
+
+____________________________________________________________________________________________________________________
+22 - to get all variable in your system with filtertion (set | grep var ) get variable start with 'var'
+
+khalid@khalid-Victus:~$ set | grep var
+BASHOPTS=checkwinsize:cmdhist:complete_fullquote:expand_aliases:extglob:extquote:force_fignore:globasciiranges:histappend:interactive_comments:progcomp:promptvars:sourcepath
+XDG_DATA_DIRS=/usr/share/ubuntu-xorg:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop
+var1=50
+var3=50
+var4=55 
+____________________________________________________________________________________________________________________
+
+23 - to know the current simple procces (ps)
+
+khalid@khalid-Victus:~$ ps
+    PID TTY          TIME CMD
+   4906 pts/1    00:00:00 bash
+   6254 pts/1    00:00:00 ps
+
+
+____________________________________________________________________________________________________________________
+24 - to define variable (declare)
+
+declare -i num1 ---> -i from integer
+declare -i num2
+num1=4
+num2=$num1*5
+echo $num2
+20
+
+____________________________________________________________________________________________________________________ 
+25 - exprition (expr)
+
+khalid@khalid-Victus:~$ expr 1 + 3 
+4
+
+khalid@khalid-Victus:~$ expr 3 \* 4 
+12
+
+khalid@khalid-Victus:~$ expr 1 = 3 
+0
+
+____________________________________________________________________________________________________________________
+26 to store output in variable to use it (>)  "command substitution"
+khalid@khalid-Victus:~$ ls -l ~ > outputkhalid@khalid-Victus:~$ cat output cat: output: No such file or directory
+khalid@khalid-Victus:~$ cat output
+total 60
+drwxrwxr-x  5 khalid khalid  4096 يول 31 05:05 Abolftoh
+drwxr-xr-x  2 khalid khalid  4096 سبت 27 15:06 Desktop
+drwxr-xr-x  2 khalid khalid  4096 ماي 27 00:47 Documents
+drwxr-xrwx  5 khalid khalid 12288 سبت 27 23:28 Downloads
+drwxr-xr-x  2 khalid khalid  4096 ماي 27 00:47 Music
+drwxrwxr-x  8 khalid khalid  4096 أغس 14 14:52 odoo16
+
+-----
+
+khalid@khalid-Victus:~$ echo $(date) > today
+khalid@khalid-Victus:~$ cat today
+28 سبت, 2025 +03 01:55:55
+____________________________________________________________________________________________________________________
+26 to store output but its error in variable to use it (2>)  "command substitution"
+khalid@khalid-Victus:~$ ls /err
+ls: cannot access '/err': No such file or directory
+khalid@khalid-Victus:~$ ls /err 2> error
+khalid@khalid-Victus:~$ cat error
+ls: cannot access '/err': No such file or directory
+____________________________________________________________________________________________________________________
+27 - to search in file about text (grep)
+
+khalid@khalid-Victus:~$ cat /etc/hosts
+127.0.0.1	localhost
+127.0.1.1	khalid-Victus
+
+# The following lines are desirable for IPv6 capable hosts
+::1     ip6-localhost ip6-loopback
+fe00::0 ip6-localnet
+ff00::0 ip6-mcastprefix
+ff02::1 ip6-allnodes
+ff02::2 ip6-allrouters
+khalid@khalid-Victus:~$ grep ff00 /etc/hosts
+ff00::0 ip6-mcastprefix
+____________________________________________________________________________________________________________________
+27 - to search in file about text but give the count of this text repeated (grep -c)
+khalid@khalid-Victus:~$ grep -c localhost /etc/hosts
+2  -> give you two
+khalid@khalid-Victus:~$ grep localhost /etc/hosts
+127.0.0.1	localhost
+::1     ip6-localhost ip6-loopback
+____________________________________________________________________________________________________________________
+28 - to filter text file and display only the first fifth lines (head) --> can use tail for last lines
+khalid@khalid-Victus:~$ head -n 5 /var/log/syslog
+Sep 28 00:00:30 khalid-Victus systemd[1]: rsyslog.service: Sent signal SIGHUP to main process 875 (rsyslogd) on client request.
+Sep 28 00:00:30 khalid-Victus systemd[1]: logrotate.service: Deactivated successfully.
+Sep 28 00:00:30 khalid-Victus systemd[1]: Finished Rotate log files.
+Sep 28 00:02:42 khalid-Victus kernel: [289219.528406] audit: type=1400 audit(1759006962.271:4581): apparmor="DENIED" operation="open" class="file" profile="snap.brave.brave" name="/proc/3199/smaps_rollup" pid=3199 comm="MemoryInfra" requested_mask="r" denied_mask="r" fsuid=1000 ouid=1000
+Sep 28 00:02:42 khalid-Victus kernel: [289219.530690] audit: type=1400 audit(1759006962.273:4582): apparmor="DENIED" operation="open" class="file" profile="snap.brave.brave" name="/proc/3199/smaps_rollup" pid=3199 comm="MemoryInfra" requested_mask="r" denied_mask="r" fsuid=1000 ouid=1000
+
+____________________________________________________________________________________________________________________
+29 - this will give you the last fifth lines and will count the words in these lines ( | )
+
+khalid@khalid-Victus:~$ head -n 5 /var/log/syslog | wc -w
+100
+____________________________________________________________________________________________________________________
+30 - this will transform text (tr)
+
+khalid@khalid-Victus:~$ echo "this iss 123 ?" | tr -d 's'
+thi i 123 ? --> deleted character  's' from the text
+---
+khalid@khalid-Victus:~$ echo "this iss 123 ?" | tr [i] [I]
+thIs Iss 123 ? --> change all small i to capital I
+
+____________________________________________________________________________________________________________________
+31 - transform with squiz (tr -s)
+khalid@khalid-Victus:~$ echo "this iss 123 ?" | tr -s 's'
+this is 123 ? --> change double ss to single s with squiz
+____________________________________________________________________________________________________________________
+31 - transform with squiz (tr [] [])
+khalid@khalid-Victus:~$ echo "this iss 123 ?" | tr [a-z] [A-Z]
+THIS ISS 123 ? --> change all character small to capital
+**************** another way ******************
+khalid@khalid-Victus:~$ echo "this is my ball 123" | tr [:lower:] [:upper:]
+THIS IS MY BALL 123
+
+____________________________________________________________________________________________________________________
+32  - delete al digits in text with transform (trs [:digit:])
+khalid@khalid-Victus:~$ echo "this iss 123 ?" | tr -d [:digit:]
+this iss  ?
+____________________________________________________________________________________________________________________
+33- to cut full text or sentence (cut)
+khalid@khalid-Victus:~$ echo "this is str ing of " | cut -c 1
+t  --> give you the first character
+***** to get some characters *******
+khalid@khalid-Victus:~$ echo "this is string of " | cut -c 1-10
+this is st
+____________________________________________________________________________________________________________________
+34 - to display all users in linux (cat /etc/passwd)
+khalid@khalid-Victus:~$ cat /etc/passwd | grep khalid
+khalid:x:1000:1000:khalid,,,:/home/khalid:/bin/bash
+******* roor user **************
+khalid@khalid-Victus:~$ cat /etc/passwd | grep root
+root:x:0:0:root:/root:/bin/bash
+nm-openvpn:x:121:127:NetworkManager OpenVPN,,,:/var/lib/openvpn/chroot:/usr/sbin/nologin
+
+____________________________________________________________________________________________________________________
+35 - to show users but with root access only (cat /etc/shadow)
+
+root@khalid-Victus:~# cat /etc/shadow
+root:$y$j9T$u5zoC4G8aGTAerkEETAno1$GrdrziqByVVQR88Pgzf0Y8V2.AP2rXqjCCiMYj78v0.:20359:0:99999:7:::
+daemon:*:19977:0:99999:7:::
+bin:*:19977:0:99999:7:::
+sys:*:19977:0:99999:7:::
+sync:*:19977:0:99999:7:::
+games:*:19977:0:99999:7:::
+man:*:19977:0:99999:7:::
+lp:*:19977:0:99999:7:::
+mail:*:19977:0:99999:7:::
+news:*:19977:0:99999:7:::
+uucp:*:19977:0:99999:7:::
+proxy:*:19977:0:99999:7:::
+www-data:*:19977:0:99999:7:::
+backup:*:19977:0:99999:7:::
+list:*:19977:0:99999:7:::
+irc:*:19977:0:99999:7:
+____________________________________________________________________________________________________________________
+36 - to get the groups the current user in it (groups)
+khalid@khalid-Victus:~$ groups
+khalid adm cdrom sudo dip plugdev lpadmin lxd sambashare
+____________________________________________________________________________________________________________________
+37 - to add new group (groupadd)
+khalid@khalid-Victus:~$ sudo groupadd group1
+khalid@khalid-Victus:~$ cat /etc/group | grep group1
+group1:x:1001:
+____________________________________________________________________________________________________________________
+38 - to delete group (groupdel)
+
+khalid@khalid-Victus:~$ sudo groupdel group1
+____________________________________________________________________________________________________________________
+File Management
+
+____________________________________________________________________________________________________________________
+39  - to know information about file (stat)
+khalid@khalid-Victus:~$ stat original
+  File: original
+  Size: 12        	Blocks: 8          IO Block: 4096   regular file
+Device: 10306h/66310d	Inode: 12165090    Links: 1
+Access: (0664/-rw-rw-r--)  Uid: ( 1000/  khalid)   Gid: ( 1000/  khalid)
+Access: 2025-09-29 00:15:21.140330679 +0300
+Modify: 2025-09-29 00:15:28.848308229 +0300
+Change: 2025-09-29 00:15:28.848308229 +0300
+ Birth: 2025-09-29 00:15:08.314370074 +0300
+ ____________________________________________________________________________________________________________________
+40 - to create hard link from file like  original file (ln original symlink) its same file and content and modified
+but if you delete the original file will not delete he hard link file
+
+khalid@khalid-Victus:~$ ls -il ori* *link
+12165090 -rw-rw-r-- 2 khalid khalid 12 سبت 29 00:15 hardlink
+12165090 -rw-rw-r-- 2 khalid khalid 12 سبت 29 00:15 original
+____________________________________________________________________________________________________________________
+41 - to create soft link from file like shortcut to call original file (ln -s original symlink)
+khalid@khalid-Victus:~$ ls -il ori* *link
+12165090 -rw-rw-r-- 2 khalid khalid 12 سبت 29 00:15 hardlink
+12165090 -rw-rw-r-- 2 khalid khalid 12 سبت 29 00:15 original
+12165098 lrwxrwxrwx 1 khalid khalid  8 سبت 29 00:20 symlink -> original
+
+symlink like pointer and if you delete original file will delete symlink
+
+
