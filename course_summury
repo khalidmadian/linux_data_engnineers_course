@@ -1,75 +1,75 @@
 =======BY Khalid Madian=============
 1 - to list files in directory (ls)
 khalid@khalid-Victus:~$ ls 
-Abolftoh   file2  hosts   odoo18    Templates
-Desktop    file3  Music   Pictures  Videos
-Documents  file4  odoo16  Public
+    Abolftoh   file2  hosts   odoo18    Templates
+    Desktop    file3  Music   Pictures  Videos
+    Documents  file4  odoo16  Public
 ____________________________________________________________________________________________________________________
 2- to list all files and hidden its start with dot (la) or (ls -a )
 khalid@khalid-Victus:~$ la
-Abolftoh       .gitconfig  .pki
-.bash_history  .gnupg      .profile
-.bash_logout   .gphoto     .psensor
-.bashrc        hosts       .psql_history
-.cache         .hosts.swp  Public
-.config        .java       snap
-.dbclient      .lesshst    .ssh
+    Abolftoh       .gitconfig  .pki
+    .bash_history  .gnupg      .profile
+    .bash_logout   .gphoto     .psensor
+    .bashrc        hosts       .psql_history
+    .cache         .hosts.swp  Public
+    .config        .java       snap
+    .dbclient      .lesshst    .ssh
 ____________________________________________________________________________________________________________________
 3- to list all files hidden and type of files and (ls -alF)
 khalid@khalid-Victus:~$ ls -alF
-total 228
-drwxr-x--x 31 khalid khalid  4096 سبت 22 17:55 ./
-drwxr-xr-x  3 root   root    4096 ماي 26 21:43 ../
-drwxrwxr-x  5 khalid khalid  4096 يول 31 05:05 Abolftoh/
--rw-------  1 khalid khalid 47896 سبت 23 05:55 .bash_history
--rw-r--r--  1 khalid khalid   220 ماي 26 21:43 .bash_logout
--rw-r--r--  1 khalid khalid  3771 ماي 26 21:43 .bashrc
-drwx------ 27 khalid khalid  4096 سبت  8 18:03 .cache/
-drwx------ 28 khalid khalid  4096 سبت 20 23:54 .config/
+    total 228
+    drwxr-x--x 31 khalid khalid  4096 سبت 22 17:55 ./
+    drwxr-xr-x  3 root   root    4096 ماي 26 21:43 ../
+    drwxrwxr-x  5 khalid khalid  4096 يول 31 05:05 Abolftoh/
+    -rw-------  1 khalid khalid 47896 سبت 23 05:55 .bash_history
+    -rw-r--r--  1 khalid khalid   220 ماي 26 21:43 .bash_logout
+    -rw-r--r--  1 khalid khalid  3771 ماي 26 21:43 .bashrc
+    drwx------ 27 khalid khalid  4096 سبت  8 18:03 .cache/
+    drwx------ 28 khalid khalid  4096 سبت 20 23:54 .config/
 ____________________________________________________________________________________________________________________
 4- to clear al command in terminal tab (clear)
 ____________________________________________________________________________________________________________________
 5 - to get documintion about about command (--help)
  khalid@khalid-Victus:~$ ls --help
-Usage: ls [OPTION]... [FILE]...
-List information about the FILEs (the current directory by default).
-Sort entries alphabetically if none of -cftuvSUX nor --sort is specified.
+    Usage: ls [OPTION]... [FILE]...
+    List information about the FILEs (the current directory by default).
+    Sort entries alphabetically if none of -cftuvSUX nor --sort is specified.
 ____________________________________________________________________________________________________________________
 6 - to get documintion about about command but not populer(man)
 ____________________________________________________________________________________________________________________
 7- to get the current path or location (pwd)
 khalid@khalid-Victus:~$ pwd
-/home/khalid
+    /home/khalid
 ____________________________________________________________________________________________________________________
 8- to get the type of command or location of rhis app or script "all command is script or app"(type)
 khalid@khalid-Victus:~$ type -a ls
-ls is aliased to `ls --color=auto'
-ls is /usr/bin/ls
-ls is /bin/ls
+    ls is aliased to `ls --color=auto'
+    ls is /usr/bin/ls
+    ls is /bin/ls
 ____________________________________________________________________________________________________________________
 9 - to know th current user is connect (whoami)
 khalid@khalid-Victus:~$ whoami 
-khalid
+    khalid
 ____________________________________________________________________________________________________________________
 10  - to know the current i connect (ip address)
 khalid@khalid-Victus:~$ ip address
-1: lo: <LOOPBACK,UP,LOWER_UP> mtu 65536 qdisc noqueue state UNKNOWN group default qlen 1000
-    link/loopback 00:00:00:00:00:00 brd 00:00:00:00:00:00
-    inet 127.0.0.1/8 scope host lo
-       valid_lft forever preferred_lft forever
-    inet6 ::1/128 scope host 
-       valid_lft forever preferred_lft forever
-2: eno1: <NO-CARRIER,BROADCAST,MULTICAST,UP> mtu 1500 qdisc fq_codel state DOWN group default qlen 1000
-    link/ether 24:6a:0e:5c:c8:6b brd ff:ff:ff:ff:ff:ff
-    altname enp3s0
-3: wlo1: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc noqueue state UP group default qlen 1000
-    link/ether 98:5f:41:b6:0e:22 brd ff:ff:ff:ff:ff:ff
+    1: lo: <LOOPBACK,UP,LOWER_UP> mtu 65536 qdisc noqueue state UNKNOWN group default qlen 1000
+        link/loopback 00:00:00:00:00:00 brd 00:00:00:00:00:00
+        inet 127.0.0.1/8 scope host lo
+           valid_lft forever preferred_lft forever
+        inet6 ::1/128 scope host
+           valid_lft forever preferred_lft forever
+    2: eno1: <NO-CARRIER,BROADCAST,MULTICAST,UP> mtu 1500 qdisc fq_codel state DOWN group default qlen 1000
+        link/ether 24:6a:0e:5c:c8:6b brd ff:ff:ff:ff:ff:ff
+        altname enp3s0
+    3: wlo1: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc noqueue state UP group default qlen 1000
+        link/ether 98:5f:41:b6:0e:22 brd ff:ff:ff:ff:ff:ff
 ____________________________________________________________________________________________________________________
 11 - to know the current host (hosyname)
 khalid@khalid-Victus:~$ hostname
-khalid-Victus
+    khalid-Victus
 ____________________________________________________________________________________________________________________
-12 - to create directory (mkdir)
+12 - to create directory (mkdir)(112233)
 ____________________________________________________________________________________________________________________
 13 - to print in terminal (echo "hello khalid sadd")
 hello khalid sadd
@@ -108,11 +108,11 @@ ________________________________________________________________________________
 22 - to get all variable in your system with filtertion (set | grep var ) get variable start with 'var'
 
 khalid@khalid-Victus:~$ set | grep var
-BASHOPTS=checkwinsize:cmdhist:complete_fullquote:expand_aliases:extglob:extquote:force_fignore:globasciiranges:histappend:interactive_comments:progcomp:promptvars:sourcepath
-XDG_DATA_DIRS=/usr/share/ubuntu-xorg:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop
-var1=50
-var3=50
-var4=55 
+    BASHOPTS=checkwinsize:cmdhist:complete_fullquote:expand_aliases:extglob:extquote:force_fignore:globasciiranges:histappend:interactive_comments:progcomp:promptvars:sourcepath
+    XDG_DATA_DIRS=/usr/share/ubuntu-xorg:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop
+    var1=50
+    var3=50
+    var4=55
 ____________________________________________________________________________________________________________________
 
 23 - to know the current simple procces (ps)
@@ -137,44 +137,44 @@ ________________________________________________________________________________
 25 - exprition (expr)
 
 khalid@khalid-Victus:~$ expr 1 + 3 
-4
+    4
 
 khalid@khalid-Victus:~$ expr 3 \* 4 
-12
+    12
 
 khalid@khalid-Victus:~$ expr 1 = 3 
-0
+    0
 
 ____________________________________________________________________________________________________________________
 26 to store output in variable to use it (>)  "command substitution"
 khalid@khalid-Victus:~$ ls -l ~ > outputkhalid@khalid-Victus:~$ cat output cat: output: No such file or directory
 khalid@khalid-Victus:~$ cat output
-total 60
-drwxrwxr-x  5 khalid khalid  4096 يول 31 05:05 Abolftoh
-drwxr-xr-x  2 khalid khalid  4096 سبت 27 15:06 Desktop
-drwxr-xr-x  2 khalid khalid  4096 ماي 27 00:47 Documents
-drwxr-xrwx  5 khalid khalid 12288 سبت 27 23:28 Downloads
-drwxr-xr-x  2 khalid khalid  4096 ماي 27 00:47 Music
-drwxrwxr-x  8 khalid khalid  4096 أغس 14 14:52 odoo16
+    total 60
+    drwxrwxr-x  5 khalid khalid  4096 يول 31 05:05 Abolftoh
+    drwxr-xr-x  2 khalid khalid  4096 سبت 27 15:06 Desktop
+    drwxr-xr-x  2 khalid khalid  4096 ماي 27 00:47 Documents
+    drwxr-xrwx  5 khalid khalid 12288 سبت 27 23:28 Downloads
+    drwxr-xr-x  2 khalid khalid  4096 ماي 27 00:47 Music
+    drwxrwxr-x  8 khalid khalid  4096 أغس 14 14:52 odoo16
 
 -----
 
 khalid@khalid-Victus:~$ echo $(date) > today
 khalid@khalid-Victus:~$ cat today
-28 سبت, 2025 +03 01:55:55
+    28 سبت, 2025 +03 01:55:55
 ____________________________________________________________________________________________________________________
 26 to store output but its error in variable to use it (2>)  "command substitution"
 khalid@khalid-Victus:~$ ls /err
-ls: cannot access '/err': No such file or directory
+    ls: cannot access '/err': No such file or directory
 khalid@khalid-Victus:~$ ls /err 2> error
 khalid@khalid-Victus:~$ cat error
-ls: cannot access '/err': No such file or directory
+    ls: cannot access '/err': No such file or directory
 ____________________________________________________________________________________________________________________
 27 - to search in file about text (grep)
 
 khalid@khalid-Victus:~$ cat /etc/hosts
-127.0.0.1	localhost
-127.0.1.1	khalid-Victus
+    127.0.0.1	localhost
+    127.0.1.1	khalid-Victus
 
 # The following lines are desirable for IPv6 capable hosts
 ::1     ip6-localhost ip6-loopback
@@ -194,17 +194,17 @@ khalid@khalid-Victus:~$ grep localhost /etc/hosts
 ____________________________________________________________________________________________________________________
 28 - to filter text file and display only the first fifth lines (head) --> can use tail for last lines
 khalid@khalid-Victus:~$ head -n 5 /var/log/syslog
-Sep 28 00:00:30 khalid-Victus systemd[1]: rsyslog.service: Sent signal SIGHUP to main process 875 (rsyslogd) on client request.
-Sep 28 00:00:30 khalid-Victus systemd[1]: logrotate.service: Deactivated successfully.
-Sep 28 00:00:30 khalid-Victus systemd[1]: Finished Rotate log files.
-Sep 28 00:02:42 khalid-Victus kernel: [289219.528406] audit: type=1400 audit(1759006962.271:4581): apparmor="DENIED" operation="open" class="file" profile="snap.brave.brave" name="/proc/3199/smaps_rollup" pid=3199 comm="MemoryInfra" requested_mask="r" denied_mask="r" fsuid=1000 ouid=1000
-Sep 28 00:02:42 khalid-Victus kernel: [289219.530690] audit: type=1400 audit(1759006962.273:4582): apparmor="DENIED" operation="open" class="file" profile="snap.brave.brave" name="/proc/3199/smaps_rollup" pid=3199 comm="MemoryInfra" requested_mask="r" denied_mask="r" fsuid=1000 ouid=1000
+    Sep 28 00:00:30 khalid-Victus systemd[1]: rsyslog.service: Sent signal SIGHUP to main process 875 (rsyslogd) on client request.
+    Sep 28 00:00:30 khalid-Victus systemd[1]: logrotate.service: Deactivated successfully.
+    Sep 28 00:00:30 khalid-Victus systemd[1]: Finished Rotate log files.
+    Sep 28 00:02:42 khalid-Victus kernel: [289219.528406] audit: type=1400 audit(1759006962.271:4581): apparmor="DENIED" operation="open" class="file" profile="snap.brave.brave" name="/proc/3199/smaps_rollup" pid=3199 comm="MemoryInfra" requested_mask="r" denied_mask="r" fsuid=1000 ouid=1000
+    Sep 28 00:02:42 khalid-Victus kernel: [289219.530690] audit: type=1400 audit(1759006962.273:4582): apparmor="DENIED" operation="open" class="file" profile="snap.brave.brave" name="/proc/3199/smaps_rollup" pid=3199 comm="MemoryInfra" requested_mask="r" denied_mask="r" fsuid=1000 ouid=1000
 
 ____________________________________________________________________________________________________________________
 29 - this will give you the last fifth lines and will count the words in these lines ( | )
 
 khalid@khalid-Victus:~$ head -n 5 /var/log/syslog | wc -w
-100
+    100
 ____________________________________________________________________________________________________________________
 30 - this will transform text (tr)
 
@@ -240,41 +240,41 @@ this is st
 ____________________________________________________________________________________________________________________
 34 - to display all users in linux (cat /etc/passwd)
 khalid@khalid-Victus:~$ cat /etc/passwd | grep khalid
-khalid:x:1000:1000:khalid,,,:/home/khalid:/bin/bash
-******* roor user **************
+    khalid:x:1000:1000:khalid,,,:/home/khalid:/bin/bash
+******* root user **************
 khalid@khalid-Victus:~$ cat /etc/passwd | grep root
-root:x:0:0:root:/root:/bin/bash
-nm-openvpn:x:121:127:NetworkManager OpenVPN,,,:/var/lib/openvpn/chroot:/usr/sbin/nologin
+    root:x:0:0:root:/root:/bin/bash
+    nm-openvpn:x:121:127:NetworkManager OpenVPN,,,:/var/lib/openvpn/chroot:/usr/sbin/nologin
 
 ____________________________________________________________________________________________________________________
 35 - to show users but with root access only (cat /etc/shadow)
 
 root@khalid-Victus:~# cat /etc/shadow
-root:$y$j9T$u5zoC4G8aGTAerkEETAno1$GrdrziqByVVQR88Pgzf0Y8V2.AP2rXqjCCiMYj78v0.:20359:0:99999:7:::
-daemon:*:19977:0:99999:7:::
-bin:*:19977:0:99999:7:::
-sys:*:19977:0:99999:7:::
-sync:*:19977:0:99999:7:::
-games:*:19977:0:99999:7:::
-man:*:19977:0:99999:7:::
-lp:*:19977:0:99999:7:::
-mail:*:19977:0:99999:7:::
-news:*:19977:0:99999:7:::
-uucp:*:19977:0:99999:7:::
-proxy:*:19977:0:99999:7:::
-www-data:*:19977:0:99999:7:::
-backup:*:19977:0:99999:7:::
-list:*:19977:0:99999:7:::
-irc:*:19977:0:99999:7:
+    root:$y$j9T$u5zoC4G8aGTAerkEETAno1$GrdrziqByVVQR88Pgzf0Y8V2.AP2rXqjCCiMYj78v0.:20359:0:99999:7:::
+    daemon:*:19977:0:99999:7:::
+    bin:*:19977:0:99999:7:::
+    sys:*:19977:0:99999:7:::
+    sync:*:19977:0:99999:7:::
+    games:*:19977:0:99999:7:::
+    man:*:19977:0:99999:7:::
+    lp:*:19977:0:99999:7:::
+    mail:*:19977:0:99999:7:::
+    news:*:19977:0:99999:7:::
+    uucp:*:19977:0:99999:7:::
+    proxy:*:19977:0:99999:7:::
+    www-data:*:19977:0:99999:7:::
+    backup:*:19977:0:99999:7:::
+    list:*:19977:0:99999:7:::
+    irc:*:19977:0:99999:7:
 ____________________________________________________________________________________________________________________
 36 - to get the groups the current user in it (groups)
 khalid@khalid-Victus:~$ groups
-khalid adm cdrom sudo dip plugdev lpadmin lxd sambashare
+    khalid adm cdrom sudo dip plugdev lpadmin lxd sambashare
 ____________________________________________________________________________________________________________________
 37 - to add new group (groupadd)
 khalid@khalid-Victus:~$ sudo groupadd group1
 khalid@khalid-Victus:~$ cat /etc/group | grep group1
-group1:x:1001:
+    group1:x:1001:
 ____________________________________________________________________________________________________________________
 38 - to delete group (groupdel)
 
@@ -285,28 +285,548 @@ File Management
 ____________________________________________________________________________________________________________________
 39  - to know information about file (stat)
 khalid@khalid-Victus:~$ stat original
-  File: original
-  Size: 12        	Blocks: 8          IO Block: 4096   regular file
-Device: 10306h/66310d	Inode: 12165090    Links: 1
-Access: (0664/-rw-rw-r--)  Uid: ( 1000/  khalid)   Gid: ( 1000/  khalid)
-Access: 2025-09-29 00:15:21.140330679 +0300
-Modify: 2025-09-29 00:15:28.848308229 +0300
-Change: 2025-09-29 00:15:28.848308229 +0300
- Birth: 2025-09-29 00:15:08.314370074 +0300
+      File: original
+      Size: 12        	Blocks: 8          IO Block: 4096   regular file
+    Device: 10306h/66310d	Inode: 12165090    Links: 1
+    Access: (0664/-rw-rw-r--)  Uid: ( 1000/  khalid)   Gid: ( 1000/  khalid)
+    Access: 2025-09-29 00:15:21.140330679 +0300
+    Modify: 2025-09-29 00:15:28.848308229 +0300
+    Change: 2025-09-29 00:15:28.848308229 +0300
+     Birth: 2025-09-29 00:15:08.314370074 +0300
  ____________________________________________________________________________________________________________________
 40 - to create hard link from file like  original file (ln original symlink) its same file and content and modified
 but if you delete the original file will not delete he hard link file
 
 khalid@khalid-Victus:~$ ls -il ori* *link
-12165090 -rw-rw-r-- 2 khalid khalid 12 سبت 29 00:15 hardlink
-12165090 -rw-rw-r-- 2 khalid khalid 12 سبت 29 00:15 original
+    12165090 -rw-rw-r-- 2 khalid khalid 12 سبت 29 00:15 hardlink
+    12165090 -rw-rw-r-- 2 khalid khalid 12 سبت 29 00:15 original
 ____________________________________________________________________________________________________________________
 41 - to create soft link from file like shortcut to call original file (ln -s original symlink)
 khalid@khalid-Victus:~$ ls -il ori* *link
-12165090 -rw-rw-r-- 2 khalid khalid 12 سبت 29 00:15 hardlink
-12165090 -rw-rw-r-- 2 khalid khalid 12 سبت 29 00:15 original
-12165098 lrwxrwxrwx 1 khalid khalid  8 سبت 29 00:20 symlink -> original
+    12165090 -rw-rw-r-- 2 khalid khalid 12 سبت 29 00:15 hardlink
+    12165090 -rw-rw-r-- 2 khalid khalid 12 سبت 29 00:15 original
+    12165098 lrwxrwxrwx 1 khalid khalid  8 سبت 29 00:20 symlink -> original
 
 symlink like pointer and if you delete original file will delete symlink
+
+____________________________________________________________________________________________________________________
+42 - to connect in root user (su -)
+khalid@khalid-Victus:~$ su -
+    Password:
+    root@khalid-Victus:~#
+____________________________________________________________________________________________________________________
+43 - if you to try connect root user but its refuse you if its your first tim access (sudo passwd root)
+khalid@khalid-Victus:~$ sudo passwd root
+    [sudo] password for khalid:
+    New password:
+    BAD PASSWORD: The password is shorter than 8 characters
+    Retype new password:
+    passwd: password updated successfully
+____________________________________________________________________________________________________________________
+44 - to know where th command or file or script  (which)
+khalid@khalid-Victus:~$ which zip
+    /usr/bin/zip
+khalid@khalid-Victus:~$ which groupadd
+    /usr/sbin/groupadd
+____________________________________________________________________________________________________________________
+45 - to know the version of linux kernel in your device
+khalid@khalid-Victus:/boot$ uname -r
+6.8.0-83-generic
+____________________________________________________________________________________________________________________
+46 - how to know the type of something in directory
+its begin wit (-) so its (file)
+-rw-r-----  1 syslog   adm   59M أكت  4 04:21 syslog
+
+its begin wit (d) so its (file)
+drwxr-xr-x  2 root    root      4.0K يون 27  2024 openvpn
+____________________________________________________________________________________________________________________
+47 - to know the type of file (file)
+khalid@khalid-Victus:~$ touch newfile
+khalid@khalid-Victus:~$ file newfile
+newfile: empty
+its still dosn't contain any data
+************but***********
+khalid@khalid-Victus:~$ echo "khalid  saad" > newfile
+khalid@khalid-Victus:~$ file newfile
+newfile: ASCII text  --> give me its ascii text
+____________________________________________________________________________________________________________________
+48 - to show the file like pages and progress with arrow keys(more)
+ to show the file like pages and progress with arrow keys(less)
+____________________________________________________________________________________________________________________
+49 - the types of files editor(head, tail, more, les, cat, none, vip)
+____________________________________________________________________________________________________________________
+50 - to review files like tree or list(tree)
+root@khalid-Victus:/usr/bin# tree
+    ├── [
+    ├── aa-enabled
+    ├── aa-exec
+    ├── aa-features-abi
+    ├── addpart
+____________________________________________________________________________________________________________________
+51 - to find a file in another directory not should be direct child with his full name or without (find)
+root@khalid-Victus:/var# find . -type f -name d*.log  --> f for file   (d*.log)--> mean start with d and end with .log
+./log/dpkg.log  --> the result search
+____________________________________________________________________________________________________________________
+52 -  get any file its name start  with file and the result execute the line after -I  (xargs)
+The result put in -->{}
+
+root@khalid-Victus:~# touch file{1,2,3}
+root@khalid-Victus:~# ls file?
+    file1  file2  file3
+root@khalid-Victus:~# ls file? | xargs -I {} mkdir {}.d
+root@khalid-Victus:~# ls
+    file1  file1.d  file2  file2.d  file3  file3.d  snap
+
+____________________________________________________________________________________________________________________
+53 - to collect files or file in one file not compress just collect (tar) this's with root
+
+root@khalid-Victus:/var# tar -cvf log.tar log/
+    ********* c --> for create  **********
+    ********* f --> for file name  **********
+    ********* v--> verbose (to display operation and files on the screen)  **********
+    ********* log/ --> back slash to tell the bash its directory npt file   **********
+root@khalid-Victus:/var# ls -dhl log*
+    drwxrwxr-x 16 root syslog 4.0K أكت  9 00:00 log
+    -rw-r--r--  1 root root   2.2G أكت 10 00:24 log.tar
+
+____________________________________________________________________________________________________________________
+54 - to  review the content of ar file without textract
+
+root@khalid-Victus:/var# tar -tf log.tar
+    log/
+    log/apache2/
+    log/apache2/error.log.3.gz
+    log/apache2/error.log.1
+    log/apache2/error.log.13.gz
+    log/apache2/access.log.1
+    log/apache2/error.log.4.gz
+____________________________________________________________________________________________________________________
+55 - to compress file or zip file (gzip)
+
+root@khalid-Victus:/var/log# gzip boot.log
+    the result
+    boot.log.gz
+____________________________________________________________________________________________________________________
+56 - to compress file or zip file  but with create new incessant without change in original file  (gzip -k)
+
+root@khalid-Victus:/var/log# gzip -k  boot.log
+root@khalid-Victus:/var/log# ls -lh boot*
+    -rw------- 1 root root   29 أكت  9 00:00 boot.log.gz
+
+____________________________________________________________________________________________________________________
+57 - to compress file or unzip fil (gzip -d)
+
+root@khalid-Victus:/var/log# gzip -d boot.log.gz
+root@khalid-Victus:/var/log#  ls -lh boot*
+    -rw------- 1 root root    0 أكت  9 00:00 boot.log
+
+_________________________________________________________________________________________________________________
+58 - to archive the file and compress in the same time (tar -czvf (file name) (the destination file/))
+
+
+root@khalid-Victus:/var# tar -czvf log.tar.gz log/
+
+root@khalid-Victus:/var# ls -lhd log*
+    drwxrwxr-x 16 root syslog 4.0K أكت 10 01:02 log
+    -rw-r--r--  1 root root   2.2G أكت 10 00:24 log.tar
+    -rw-r--r--  1 root root   234M أكت 10 01:14 log.tar.gz
+____________________________________________________________________________________________________________________
+59 - to unarchive the file and compress in the same time (tar -xzvf (file name)  location)
+
+
+root@khalid-Victus:/var# tar -xzvf log.tar.gz log/
+____________________________________________________________________________________________________________________
+60 - to know the type of file
+
+root@khalid-Victus:/var#  file log.tar.gz
+    log.tar.gz: gzip compressed data, from Unix, original size modulo 2^32 2335201280
+____________________________________________________________________________________________________________________
+61 -  to rename the file name (mv)
+root@khalid-Victus:/var# mv log.tar.gz log.tgz
+root@khalid-Victus:/var# ls -lhd log*
+    -rw-r--r--  1 root root   234M أكت 10 01:14 log.tgz
+
+root@khalid-Victus:/var# file log.tgz
+    log.tgz: gzip compressed data, from Unix, original size modulo 2^32 2335201280
+____________________________________________________________________________________________________________________
+62 - file owners and permissions
+
+when you create file its will be have default owner for thr user have created it
+khalid@khalid-Victus:~$ touch somefile
+khalid@khalid-Victus:~$ ls -l | grep somefile
+    -rw-rw-r--  1 khalid khalid     0 أكت 10 02:44 somefile
+here in this example this file have owner khalid  and khalid have primary group khalid too
+if you want to change the khalid group you can change it and will display in the screen
+____________________________________________________________________________________________________________________
+63 - to add  user (useradd)
+sudo useradd user1 -m -s /bin/bash
+******* -m /bin/bash --> Creates the user’s home directory *********
+******* -s /bin/bash --> Sets Bash as the user’s default shell *********
+after that you should change the password to can login
+____________________________________________________________________________________________________________________
+64 - to add  user (userdel)
+khalid@khalid-Victus:/home$ sudo userdel -r user1
+**** r --> to remove from  home directory (/home/username)******
+____________________________________________________________________________________________________________________
+65 - to change the owner of the file (chown)
+user1@khalid-Victus:/tmp/dir$ sudo chown user1 file1
+    -rw-rw-r--  1 user1  khalid    10 أكت 10 02:55 file1
+____________________________________________________________________________________________________________________
+66 - to change the owner and group of the file (chown user1:user1)
+user1@khalid-Victus:/tmp/dir$ sudo chown user1 user1 file1
+    -rw-rw-r--  1 user1  user1     10 أكت 10 02:55 file1
+____________________________________________________________________________________________________________________
+67 - to change the group of the file (chown :user1)
+user1@khalid-Victus:/tmp/dir$ sudo chown :user1 file1
+    -rw-rw-r--  1 khalid  user1     10 أكت 10 02:55 file1
+____________________________________________________________________________________________________________________
+68 - to change the group of the file (chgrp admins)
+user1@khalid-Victus:/tmp/dir$ sudo chown :user1 file1
+    -rw-rw-r--  1 user1  admin     10 أكت 10 02:55 file1
+____________________________________________________________________________________________________________________
+69 - to change the mode of file or directory (chmod)
+we have three types ( owner user **** group **** others )
+before change without anything -->
+khalid@khalid-Victus:/tmp/dir$ ls -l
+    total 4
+    -rw-rw-r-- 1 khalid khalid 10 أكت 10 02:55 file1
+
+sudo chmod u=rw, g=r, o-r file1   -->  o-r  (-) mines mean (others) have permission read i dont want it
+
+khalid@khalid-Victus:/tmp/dir$ sudo chmod u=rw,g=r,o-r file1
+khalid@khalid-Victus:/tmp/dir$ ls -l
+    total 4
+    -rw-r----- 1 khalid khalid 10 أكت 10 02:55 file1
+    ****************** access with anther user   *****************************
+user1@khalid-Victus:/tmp/dir$ cat file1
+    cat: file1: Permission denied
+
+khalid@khalid-Victus:/tmp/dir$ sudo chmod o+r file1
+user1@khalid-Victus:/tmp/dir$ cat file1
+    some text
+
+____________________________________________________________________________________________________________________
+70 - shortcut in permission
+
+khalid@khalid-Victus:/tmp/dir$ sudo chmod ug+x file1
+khalid@khalid-Victus:/tmp/dir$ ls -l
+    total 4
+    -rwxr-xr-- 1 khalid khalid 10 أكت 10 02:55 file1
+
+____________________________________________________________________________________________________________________
+71 - in permission you can numerical as shortcut
+4 --> READ
+2 --> WRITE
+1 --> EXECUTE
+(         6                          4                           4                )
+  owner user --> read + write    groups --> read         others --> read
+
+khalid@khalid-Victus:/tmp/dir$ chmod 644 file1
+khalid@khalid-Victus:/tmp/dir$ ls -l
+    total 4
+    -rw-r--r-- 1 khalid khalid 10 أكت 10 02:55 file1
+
+____________________________________________________________________________________________________________________
+72 - if you want to give one users in others but not all and not owner user(getfacl)
+( get file access control list )
+
+khalid@khalid-Victus:/tmp/dir$ getfacl file2
+    # file: file2
+    # owner: khalid
+    # group: khalid
+    user::rw-
+    group::r--
+    other::r--
+
+____________________________________________________________________________________________________________________
+73 - if you want to give one users in others but not all and not owner user(setfacl)
+( set file access control list )
+khalid@khalid-Victus:/tmp/dir$ setfacl -m u:user1:r file2
+khalid@khalid-Victus:/tmp/dir$ getfacl file2
+    # file: file2
+    # owner: khalid
+    # group: khalid
+    user::rw-
+    user:user1:r--
+    group::r--
+    mask::r--
+    other::r--
+
+khalid@khalid-Victus:/tmp/dir$ ls -l
+    total 8
+    -rw-r--r--  1 khalid khalid 10 أكت 10 02:55 file1
+    -rw-r--r--+ 1 khalid khalid 10 أكت 10 05:04 file2
+
+(+) we have plus sign in file2 (special  permission)
+____________________________________________________________________________________________________________________
+74 - the process is running in the system in simple way (ps)
+
+khalid@khalid-Victus:~$ ps
+        PID TTY          TIME CMD
+      60461 pts/2    00:00:00 bash
+      60492 pts/2    00:00:00 ps
+____________________________________________________________________________________________________________________
+75 - the all process is running in the system  (ps -e)
+the first process running is  --> systemd
+
+khalid@khalid-Victus:~$ ps -e
+    PID TTY          TIME CMD
+      1 ?        00:00:03 systemd
+      2 ?        00:00:00 kthreadd
+      3 ?        00:00:00 pool_workqueue_release
+      4 ?        00:00:00 kworker/R-rcu_g
+      5 ?        00:00:00 kworker/R-rcu_p
+      6 ?        00:00:00 kworker/R-slub_
+      7 ?        00:00:00 kworker/R-netns
+      9 ?        00:00:00 kworker/0:0H-events_highpri
+____________________________________________________________________________________________________________________
+76 - to show the process tree with parent
+
+khalid@khalid-Victus:~$  pstree
+    systemd─┬─ModemManager───2*[{ModemManager}]
+            ├─NetworkManager───2*[{NetworkManager}]
+            ├─accounts-daemon───2*[{accounts-daemon}]
+            ├─acpid
+            ├─apache2───2*[apache2───26*[{apache2}]]
+            ├─avahi-daemon───avahi-daemon
+            ├─bluetoothd
+            ├─colord───2*[{colord}]
+            ├─cron
+            ├─cups-browsed───2*[{cups-browsed}]
+            ├─cupsd
+            ├─dbus-daemon
+            ├─fwupd───4*[{fwupd}]
+            ├─gdm3─┬─gdm-session-wor─┬─gdm-x-session─┬─Xorg───41*[{Xorg}]
+            │      │                 │               ├─gnome-session-b───2*[{gnome-
+
+____________________________________________________________________________________________________________________
+77- to show the proces running with external ui (htop)
+
+____________________________________________________________________________________________________________________
+78 - to make the process sleep for sometime (sleep (the time))
+____________________________________________________________________________________________________________________
+79 - the types of killing process by id (kill)
+    kill -SIGHUP --> -1 , -SIGINT --> -2  , SIGTERM -->-15   , SIGKILL--> -9  PID (Process ID)
+    ************8 example ************
+    kill -9 $(sudo lsof -t -I:8069)
+____________________________________________________________________________________________________________________
+80 - to kill all process with the same name (killall)
+
+____________________________________________________________________________________________________________________
+********************************************** package Management **************************************************
+DEP
+<package_name>_<version>_<arch>.deb
+____________________________________________________________________________________________________________________
+81 - to know the packages in your operating system (dpkg -l)
+khalid@khalid-Victus:~$ dpkg -l
+    Desired=Unknown/Install/Remove/Purge/Hold
+    | Status=Not/Inst/Conf-files/Unpacked/halF-conf/Half-inst/trig-aWait/Trig-pend
+    |/ Err?=(none)/Reinst-required (Status,Err: uppercase=bad)
+    ||/ Name                                       Version                         >
+    +++-==========================================-================================>
+    ii  accountsservice                            22.07.5-2ubuntu1.5              >
+    ii  acl                                        2.3.1-1                         >
+    ii  acpi-support                               0.144                           >
+    ii  acpid                                      1:2.0.33-1ubuntu1               >
+    ii  adduser                                    3.118ubu
+
+
+____________________________________________________________________________________________________________________
+82 - to know the packages data with name (dpkg -P)
+
+khalid@khalid-Victus:~$ dpkg -p bash
+    Package: bash
+    Essential: yes
+    Priority: required
+    Section: shells
+    Installed-Size: 1864
+    Origin: Ubuntu
+    Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+    Bugs: https://bugs.launchpad.net/ubuntu/+filebug
+    Architecture: amd64
+    Multi-Arch: foreign
+    ......
+____________________________________________________________________________________________________________________
+83 - to download the package (wget)
+    wget http://kr.archive.ubuntu.com/ubuntu/pool/universe/n/nsnake/nsnake_3.0.1-2.1_amd64.deb
+____________________________________________________________________________________________________________________
+84 - to know location of package where downloaded (dpkg -L)
+    dpkg -L nsnake
+
+
+
+____________________________________________________________________________________________________________________
+85-1-  to install a .deb package manually on Debian-based systems like Ubuntu(dpkg -i )
+    sudo --> gives you admin (root) permissions.
+    dpkg --> the Debian package manager.
+    -i -->means “install”.
+    package.deb --> the file you want to install.
+
+            ***************************************************
+
+85-2- to uninstall package (dpkg -r )
+khalid@khalid-Victus:~$ sudo dpkg -r nsnake
+    (Reading database ... 256742 files and directories currently installed.)
+    Removing nsnake (3.0.1-2.1) ...
+    Processing triggers for man-db (2.10.2-1) ...
+    Processing triggers for hicolor-icon-theme (0.17-2) ...
+
+
+____________________________________________________________________________________________________________________
+86 - you can install with apt (APT)
+
+
+khalid@khalid-Victus:~$ sudo  apt install nsnake
+Reading package lists... Done
+Building dependency tree... Done
+____________________________________________________________________________________________________________________
+87 - check the version of packages you have and the repo of location you installed from where and tell you ( apdt update )
+****************************************************** Example ******************************************************
+khalid@khalid-Victus:~$ dpkg -p bash
+    Package: bash
+    Essential: yes
+    Priority: required
+    Section: shells
+    Installed-Size: 1864
+    Origin: Ubuntu
+    Bugs: https://bugs.launchpad.net/ubuntu/+filebug
+    Architecture: amd64
+    Multi-Arch: foreign
+    Version: 5.1-6ubuntu1 --> when you run (sudo apt update ) will take this date like version of every package have
+                              installed and compare it with this package text file in website
+
+________________________________________________    ____________________________________________________________________
+88 - to know the size of package or the word of count (wc)
+khalid@khalid-Victus:~$ wc nsnake_3.0.1-2.1_amd64.deb
+      432    2336     97128     nsnake_3.0.1-2.1_amd64.deb
+       count of words ,  count of line , count of bytes , name of package
+
+____________________________________________________________________________________________________________________
+89 - to install with (apt-get)
+
+khalid@khalid-Victus:~$ sudo apt-get install nsnake
+    Reading package lists... Done
+    Building dependency tree... Done
+    Reading state information... Done
+    The following packages were automa
+____________________________________________________________________________________________________________________
+******************************************* connect to remote server ***********************************************
+90 - to connect to server (cd to /.ssh )
+ssh 4.236.152.79 or any server
+____________________________________________________________________________________________________________________
+91 - Used to download files or websites from the internet (wget)
+    wget https://example.com/file.zip
+    if you want to download a lot of links tou can put it in text file and add -i with it
+    wget /home/khalid/Desktop/download-links.txt
+____________________________________________________________________________________________________________________
+92 - It’s a web browser in the terminal. (w3m)
+    w3m www.google.com
+____________________________________________________________________________________________________________________
+******************************************* shell scripts ***********************************************
+93 - to run shell script in ubuntu(sh , bash)
+first step create file
+khalid@khalid-Victus:~$ nano first_script.sh
+        ls
+        date                 --> PUT THIS COMMAND IN FILE
+        whoami
+        echo "hi khalid"
+
+khalid@khalid-Victus:~$ ls -l first_script.sh
+    -rw-rw-r-- 1 khalid khalid 32 أكت 22 08:15 first_script.sh  --> not have (x) mean can't execute
+khalid@khalid-Victus:~$ chmod +x first_script.sh  --> make this file executable
+khalid@khalid-Victus:~$ ls -l first_script.sh
+    -rwxrwxr-x 1 khalid khalid 32 أكت 22 08:15 first_script.sh --> include (x)
+NOW YOU CAN EXECUTE
+khalid@khalid-Victus:~$ sh first_script.sh  --> WILL DO ALL COMMANDS IN FILE LIKE ls
+        Abolftoh   Downloads	    nsnake_3.0.1-2.1_amd64.deb	odoo18	  snap
+        Desktop    first_script.sh  odoo16			Pictures  Templates
+        Documents  Music	    odoo17			Public	  Videos
+        22 أكت, 2025 +03 08:17:52 ص
+        khalid
+        hi khalid
+
+                    OR
+
+khalid@khalid-Victus:~$ bash first_script.sh
+        Abolftoh   Downloads	    nsnake_3.0.1-2.1_amd64.deb	odoo18	  snap
+        Desktop    first_script.sh  odoo16			Pictures  Templates
+        Documents  Music	    odoo17			Public	  Videos
+        22 أكت, 2025 +03 08:18:16 ص
+        khalid
+        hi khalid
+____________________________________________________________________________________________________________________
+93 - to run shell script in ubuntu(./ , all PATH)
+khalid@khalid-Victus:~$ ./first_script.sh
+    Abolftoh   Downloads	    nsnake_3.0.1-2.1_amd64.deb	odoo18	  snap
+    Desktop    first_script.sh  odoo16			Pictures  Templates
+    Documents  Music	    odoo17			Public	  Videos
+    22 أكت, 2025 +03 09:52:28 ص
+    khalid
+    hi khalid
+
+khalid@khalid-Victus:~$ /home/khalid/first_script.sh
+    Abolftoh   Downloads	    nsnake_3.0.1-2.1_amd64.deb	odoo18	  snap
+    Desktop    first_script.sh  odoo16			Pictures  Templates
+    Documents  Music	    odoo17			Public	  Videos
+    22 أكت, 2025 +03 10:02:53 ص
+    khalid
+    hi khalid
+____________________________________________________________________________________________________________________
+94 - if you want to use this shell script
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
