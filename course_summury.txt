@@ -559,12 +559,23 @@ khalid@khalid-Victus:/tmp/dir$ ls -l
 
 (+) we have plus sign in file2 (special  permission)
 ____________________________________________________________________________________________________________________
-74 - the process is running in the system in simple way (ps)
+74-1 the process is running in the system in simple way (ps)
 
 khalid@khalid-Victus:~$ ps
         PID TTY          TIME CMD
       60461 pts/2    00:00:00 bash
-      60492 pts/2    00:00:00 ps
+      60492 pts/2    00:00:00 ps\
+
+74-2 - to use easy shell its name fish for beginner(fish)
+khalid@khalid-Victus:~$ sudo apt install fish
+khalid@khalid-Victus:~$ fish
+khalid@khalid-Victus ~> ps
+        PID TTY          TIME CMD
+      26429 pts/6    00:00:00 bash
+      27896 pts/6    00:00:00 fish
+      28028 pts/6    00:00:00 ps
+
+*** can we see its running
 ____________________________________________________________________________________________________________________
 75 - the all process is running in the system  (ps -e)
 the first process running is  --> systemd
@@ -772,36 +783,530 @@ khalid@khalid-Victus:~$ /home/khalid/first_script.sh
     khalid
     hi khalid
 ____________________________________________________________________________________________________________________
-94 - if you want to use this shell script
+94 - if you want to use this shell script with bash if any distru you use (#!/bin/bash)
+khalid@khalid-Victus:~$ nano first_script.sh
+    #!/bin/bash
+
+    ls                           |
+    date                         |-----> that mean will run with bash first after that execute lines with bash
+    whoami                       |
+    echo "Hello script"
+____________________________________________________________________________________________________________________
+95 - you can run the script with another thing you want like (/usr/bin/python3)
+
+    #!/usr/bin/python3
+
+    ls                           |
+    date                         |-----> that mean will run with bash first after that execute lines with bash
+    whoami                       |
+    echo "Hello script"
+
+    ********************************************
+if you you don't know the location 'path' of python (env)
+
+#!/usr/bin/env python3
+    Explanation:
+        #! → called shebang, tells system how to run the file
+        /usr/bin/env → finds the program in your system PATH
+        python3 → the interpreter (Python version 3)
+
+         #!/usr/bin/env python3
+         print("Hello Khalid!")
 
 
+____________________________________________________________________________________________________________________
+96 - if you want to type more than onw command in thw same line (;)
+khalid@khalid-Victus:~/Abolftoh$ cd courses/ ; ls
+    elzero_html_css  github_docs                       postgresql-course
+    elzero_python    linux_for_data_engnineers_course
+
+____________________________________________________________________________________________________________________
+97 - if you want to execute the second command depend on the first one. the first should be true ( && )
+khalid@khalid-Victus:~/Abolftoh$ echo "saad" && echo "good work"
+    saad  --> first
+    good work --> second
+
+khalid@khalid-Victus:~/Abolftoh$sudo apt update && sudo apt full-upgrade -y
+    this is an exampele
+____________________________________________________________________________________________________________________
+98 - if you want to execute the second command depend on the first one. the first should be false ( || )
+khalid@khalid-Victus:~/Abolftoh$ echo "saad" || echo "good work"  -->  not run because the first one is true
+    saad
+
+khalid@khalid-Victus:~/Abolftoh$ false || echo "good work"      -->  run because the first one is false
+    good work
+
+khalid@khalid-Victus:~/Abolftoh$ ech 'madian' || echo "good work"   -->  run because the first one is false
+    Command 'ech' not found, did you mean:
+    good work
+____________________________________________________________________________________________________________________
+99 - to install bash kernel (pip install bash_kernel)
+1-first something update the system
+khalid@khalid-Victus:~/Abolftoh$sudo apt update && sudo apt upgrade -y
+2- install pip
+khalid@khalid-Victus:~$ sudo apt install python3-pip -y
+3- install bash kernel with pip
+khalid@khalid-Victus:~$ pip install bash_kernel
+4- activation bash kernel installation
+khalid@khalid-Victus:~$ python3 -m bash_kernal.install
+____________________________________________________________________________________________________________________
+100 - install jupyter from vs code and create jupyter file with extension so you can read it
+khalid@khalid-Victus:~$ touch jup_script.ipynb
+____________________________________________________________________________________________________________________
+101 - play some commands in bash kernel
+101-1
+#!/bin/bash
+
+# variables
+
+# Integer
+# String
+# Constant
+
+set -e   # stop the proccess if there is any command not executed
+
+declare -i sum=16 # the -i is for integer data type
+declare st="Some String"   # here will know its string
+declare -r PI=3.14  # -r --> mean its read only
+declare -a names=(Ahmed Sami) # -a mean its array
+names[2]="Ali" # change array second position
 
 
+echo $sum
+echo $st
+echo $PI
+echo $names
+echo ${names[1]}
+echo ${names[2]}
+
+exit 0 --> to quit from loop
+
+******************************************* shell scripts  result ***********************************************
+
+    16
+    Some String
+    3.14
+    Ahmed
+    Sami
+    Ali
+    exit
+    Restarting Bash
+*****************************************************************************************************************
+____________________________________________________________________________________________________________________
+101-2
+#!/bin/bash
+
+# ARITHMETIC OPERATION
 
 
+num=4
+echo $((num*5))    # bash
+expr $num + 6      # using expr
+echo $num ^ 4 | bc # using bash calculater
+
+******************************************* shell scripts  result ***********************************************
+    20
+    10
+    256
+____________________________________________________________________________________________________________________
+101-3
+
+# using [[]] with -le -ge -gt -eq
+[[ 1 -le 2 ]] ; echo $?
+
+# using [[]] with == >= <= !=
+[[ 3 == 3 ]] ; echo $?
+[[ 3 != 3 ]] ; echo $?
+
+# using test command
+test 1 -le 5 ; echo $?
+
+#logical file operation
+test -f /etc/hosts ; echo $?    # -f does file exist
+test -r /etc/shadow ; echo $?   # -r does the user have the read access ? -w -x
+******************************************* shell scripts  result ***********************************************
+    0
+    0
+    1
+    0
+    0
+    1
+____________________________________________________________________________________________________________________
+101-4 - run this with the terminal because its interactive
+
+                               | #!/bin/bash
+                               |# POSITIONAL PARAMETERS
+                               |
+                               | # $0 - name of the script
+                               | # $# - Number of the command-line arguments
+                               | # $* - List of command-line arguments
+                               | # $@ - same as $* but treats list of args as index array
+first_script.sh   -->          | # $1 - 1st positional parameters
+                               | # $2 - 2nd positional parameters
+                               |
+                               |
+                               | echo "the total number of arguments is : $#"
+                               | echo "the  arguments are : $#"
+                               | echo "the first args is  : $1"
+
+khalid@khalid-Victus:~$ ./first_script.sh Khalid the best
+    the total number of arguments is : 3
+    the  arguments are : 3
+    the first args is  : Khalid
+*************************************************** functions ******************************************************
+____________________________________________________________________________________________________________________
+102 - how to use functions
+
+#!/bin/bash
+
+# FUNCTIONS
+# return
+
+function hello(){
+    echo "hello Functions"
+    timestmp
+    return 0
+}
+
+function timestmp(){
+    echo "hello the time now is $(date +%m/%d/%y" "%R)"
+}
+
+hello
+
+echo $?
+******************************************* shell scripts  result ***********************************************
+hello Functions
+hello the time now is 10/25/25 08:16
+0
+____________________________________________________________________________________________________________________
+103 - to create input (read)
+#!/bin/bash
+
+# READ FROM STDIN
+
+#read [-option] [variables...]
+
+    echo "what is your name ?"
+    read name                    --> we will use it to store variable in it
+    echo "hello, $name!"
+
+103-1- to create input in the same line (-p)
+#!/bin/bash
+
+# READ FROM STDIN
+
+#read [-option] [variables...]
+
+read -p "what is your name: " name
+echo "hello, $name!"
+
+khalid@khalid-Victus:~$ ./first_script.sh
+    what is your name: khalid
+    hello, khalid!
+103-2- to create input invisible during type (-sp)
+____________________________________________________________________________________________________________________
+104 - FOR loop
+
+#!/bin/bash
+# FOR LOOP
+
+for integer in 1 2 3 4 5 6 7
+    do
+        echo $integer
+    done
+******************************************* shell scripts  result ***********************************************
+
+        1
+        2
+        3
+        4
+        5
+        6
+        7
+
+********************************
+#!/bin/bash
+
+for word in some string statement
+    do
+        echo $word
+    done
+******************************************* shell scripts  result ***********************************************
+
+        some
+        string
+        statement
 
 
+********************************
+#!/bin/bash
+
+for ((i=0 ; i<=10; i++))
+    do
+        echo $i
+    done
+******************************************* shell scripts  result ***********************************************
+        0
+        1
+        2
+        3
+        4
+        5
+        6
+        7
+        8
+        9
+        10
+____________________________________________________________________________________________________________________
+105 - WHILE LOOP
+#!/bin/bash
+
+#while loop
+
+i=0
+while [ $i -le 10 ]
+    do
+        echo $i
+        ((i++))
+    done
+******************************************* shell scripts  result ***********************************************
+        0
+        1
+        2
+        3
+        4
+        5
+        6
+        7
+        8
+        9
+        10
+____________________________________________________________________________________________________________________
+106 - UNTIL LOOP
+
+while not enter to the loop until the statement be false
+
+#!/bin/bash
+i=0
+until test $i -eq 10
+    do
+        echo $i
+        ((i++))
+    done
+******************************************* shell scripts  result ***********************************************
+        0
+        1
+        2
+        3
+        4
+        5
+        6
+        7
+        8
+        9
+____________________________________________________________________________________________________________________
+107 - if statement
+#!/bin/bash
+
+# CONDITIONAL EXPRESSIONS
+
+if [ "foo" = "foo" ] ; then
+    echo expression evaluated as true
+fi
+
+******************************************* shell scripts  result ***********************************************
+        expression evaluated as true
+____________________________________________________________________________________________________________________
+108 - Examples(if, for, function)
+
+./first_script.sh  ---->
+#!/bin/bash
+
+# check if number is even
+
+read -p "Enter a Number :" i
+
+if (( i % 2 == 0 )); then
+    echo "$i is even "
+fi
+******************************************* shell scripts  result ***********************************************
+khalid@khalid-Victus:~$ ./first_script.sh
+    Enter a Number :4
+    4 is even
+
+____________________________________________________________________________________________________________________
+108-1 Advanced Examples (if, for, function, while)
+
+# check if a number is even
+
+read -p "Enter a number: " i
+
+else
+    if (( i % 2 == 0 )); then  # check if even or odd
+        echo "$i is even"
+    else
+        echo "$i is odd"
+    fi
+fi
+******************************************* shell scripts  result ***********************************************
+        Enter a number: 8
+        8 is even
+
+        Enter a number: 5
+        5 is odd
+____________________________________________________________________________________________________________________
+108-2 Advanced Examples (if, for, function, while)
+check number is integer and is even or odd
+
+./first_script.sh  ---->
+#!/bin/bash
+
+read -p "Enter a number: " i
+
+if ! [[ "$i" =~ ^[0-9]+$ ]]; then  # check if the input is an integer
+    echo "Error: Not an integer"
+    exit 1
+
+else
+    if (( i % 2 == 0 )); then  # check if even or odd
+        echo "$i is even"
+    else
+        echo "$i is odd"
+    fi
+fi
+
+******************************************* shell scripts  result ***********************************************
+    Enter a number: 8
+        8 is even
+
+    Enter a number: 5
+        5 is odd
+
+    Enter a number: hello
+        Error: Not an integer
+
+____________________________________________________________________________________________________________________
+108-3 Advanced Examples (if, for, function, while)
+check number is integer and is even or odd with function integration
+./first_script.sh  ---->
+
+#!/bin/bash
+
+#check number is integer and is even or odd with function integration
+
+read -p "Enter a Number :" i
+
+function is_int(){
+    if [[ "$i" =~ ^[0-9]+$ ]]; then  # check if the input is an integer
+        return 0
+    else
+        return 1
+    fi
+}
+
+# [[ "$i" =~ ^[0-9]+$ ]]  -> $? --> will return 0 if true like every command in shell
+if is_int; then
+    if (( i % 2 == 0 )); then
+        echo "$i is even "
+
+    else
+        echo "$i is odd "
+
+    fi
+else
+    echo "Error : not an Integer "
+fi
+
+******************************************* shell scripts  result ***********************************************
+    khalid@khalid-Victus:~$ ./first_script.sh
+        Enter a Number :9
+        9 is odd
 
 
+    khalid@khalid-Victus:~$ ./first_script.sh
+        Enter a Number :8
+        8 is even
+
+    khalid@khalid-Victus:~$ ./first_script.sh
+        Enter a Number :d
+        Error : not an Integer
+____________________________________________________________________________________________________________________
+108-4 Advanced Examples (if, for, function, while)
+check number is integer and is even or odd with function integration with while
+
+Check if user input is an integer, and if it’s even or odd.
+The loop continues until the user types “khalas”.
+local value="$1" → gets the first argument.
+[[ "$value" =~ ^[0-9]+$ ]] → checks if the input has only digits.
+return 0 → true (integer).
+return 1 → false (not integer).
+************
+Concept	Meaning
+[[ ]]	Conditional test (used for strings & regex)
+(( ))	Arithmetic test (used for numbers)
+$?	Holds the exit code of the last command (0 = true)
+return	Used inside functions to signal success (0) or failure (1)
+${i,,}	Converts string to lowercase
+break	Exits the current loop
+
+./first_script.sh  ---->
+
+#!/bin/bash
+
+#check number is integer and is even or odd with function integration
 
 
+function is_int(){
+    if [[ "$i" =~ ^[0-9]+$ ]]; then  # check if the input is an integer
+        return 0
+    else
+        return 1
+    fi
+}
+
+while [[ ${i,,} != 'khalas' ]]
+do
+
+read -p "Enter a Number :" i
 
 
+if is_int; then
+    if (( i % 2 == 0 )); then
+        echo "$i is even "
 
+    else
+        echo "$i is odd "
 
+    fi
+else
+    echo "Error : not an Integer "
+fi
 
+done
 
+******************************************* shell scripts  result ***********************************************
+    khalid@khalid-Victus:~$ ./first_script.sh
+    Enter a Number :6
+        6 is even
+    Enter a Number :7
+        7 is odd
+    Enter a Number :5
+        5 is odd
+    Enter a Number :f
+        Error : not an Integer
+    Enter a Number :khalas
+        khalid@khalid-Victus:~$
+____________________________________________________________________________________________________________________
+109 - pro advanced examples (&>)
+its meaning take every thing the output and error  throw it to a location like redirection
 
+sudo apt update &> /dev/null
 
-
-
-
-
-
-
-
-
-
+ls /  > out.txt      # normal outputs
+ls / 2> err.txt      # Errors
+ls / &> all.txt      # outputs & errors
+___________________________________________________the end _______________________________ _________________________
 
 
 
